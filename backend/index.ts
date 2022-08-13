@@ -1,7 +1,10 @@
 // import the needed node_modules.
-const express = require("express");
+import express, {Express, Request, Response} from 'express';
+import dotenv from 'dotenv';
 const cors = require("cors");
 const morgan = require("morgan");
+
+dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 8000;
 
@@ -13,8 +16,10 @@ app.use(express.json());
 // Any requests for static files will go into the public folder
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
-  res.send({ test: "Client succesfully connected to express" });
+app.get("/", (req: Request, res: Response) => {
+  res.send({
+    test: "Client succesfully connected to express typescript server",
+  });
 });
 
 // this is our catch all endpoint.

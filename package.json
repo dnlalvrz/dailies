@@ -17,8 +17,6 @@
   },
   "homepage": "https://github.com/dnlalvrz/dailies#readme",
   "dependencies": {
-    "cors": "^2.8.5",
-    "eslint": "^8.21.0",
-    "nodemon": "^2.0.19"
+    "eslint": "^8.21.0"
   }
 }
