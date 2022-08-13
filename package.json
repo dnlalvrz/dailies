@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/dnlalvrz/dailies#readme",
   "dependencies": {
-    "eslint": "^8.21.0"
+    "eslint": "^8.21.0",
+    "react-router": "^6.3.0",
+    "styled-components": "^5.3.5"
   }
 }
