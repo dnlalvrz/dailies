@@ -1,6 +1,6 @@
 // import the needed node_modules.
-import express, {Express, Request, Response} from 'express';
-import dotenv from 'dotenv';
+const express = require("express");
+const dotenv = require("dotenv");
 const cors = require("cors");
 const morgan = require("morgan");
 
@@ -16,9 +16,9 @@ app.use(express.json());
 // Any requests for static files will go into the public folder
 app.use(express.static("public"));
 
-app.get("/", (req: Request, res: Response) => {
+app.get("/", (req, res) => {
   res.send({
-    test: "Client succesfully connected to express typescript server",
+    test: "Client succesfully connected to express",
   });
 });
 
